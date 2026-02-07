@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les Saveurs de Saigon — Restaurant Vietnamien Paris 13e</title>
+    <meta
+      name="description"
+      content="Restaurant vietnamien authentique au cœur du 13e arrondissement de Paris. Bibimbap, Bo Bun, Poke Bowls et spécialités maison préparées avec passion par notre cheffe Thi Thuy Nguyen."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">Saveurs <span>de</span> Saigon</a>
+        <ul class="nav-links">
+          <li><a href="#about">Notre histoire</a></li>
+          <li><a href="#specialties">Spécialités</a></li>
+          <li><a href="#menu">La Carte</a></li>
+          <li><a href="#info">Infos pratiques</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#about" onclick="closeMobile()">Notre histoire</a>
+      <a href="#specialties" onclick="closeMobile()">Spécialités</a>
+      <a href="#menu" onclick="closeMobile()">La Carte</a>
+      <a href="#info" onclick="closeMobile()">Infos pratiques</a>
+      <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-pattern"></div>
+      <div class="hero-decoration"></div>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">Restaurant vietnamien · Paris 13e</div>
+          <h1 class="hero-title">Les <em>Saveurs</em><br />de Saigon</h1>
+          <p class="hero-subtitle">
+            Une cuisine vietnamienne authentique, préparée avec passion au cœur
+            du 13e arrondissement de Paris. Des recettes traditionnelles
+            transmises de génération en génération.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">
+              <svg
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              Découvrir la carte
+            </a>
+            <a href="#contact" class="btn btn-outline">Nous contacter</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-card-icon">🇻🇳</div>
+            <h3>Cuisine du Sud-Vietnam</h3>
+            <p>
+              Notre cheffe Thi Thuy Nguyen, originaire de Hô-Chi-Minh-Ville,
+              vous fait voyager à travers les saveurs du Vietnam, de la
+              Thaïlande et de la Corée.
+            </p>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <div class="hero-stat-value">15+</div>
+                <div class="hero-stat-label">Ans d'expérience</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-value">Fait</div>
+                <div class="hero-stat-label">Maison</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-value">4.5★</div>
+                <div class="hero-stat-label">Google</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-float-badge">🥢 À emporter disponible</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== À PROPOS ===== -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-image-box">
+            <div class="about-emoji-display">🍜</div>
+          </div>
+          <div class="about-accent-card">
+            <span>Depuis 2016</span>
+            <small>Rue Albert, Paris 13e</small>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-header">
+            <div class="section-label">Notre histoire</div>
+            <h2 class="section-title">
+              Un voyage culinaire<br />au cœur de Saigon
+            </h2>
+          </div>
+          <p>
+            Les Saveurs de Saigon vous proposent une cuisine asiatique
+            traditionnelle, principalement vietnamienne mais aussi thaïlandaise
+            et coréenne. Chaque plat est préparé sur place avec des produits
+            frais, selon des recettes transmises de mère en fille.
+          </p>
+          <p>
+            Notre cheffe, Thi Thuy Nguyen, est née à Hô-Chi-Minh-Ville
+            (anciennement Saigon) où sa mère lui a enseigné l'art de la cuisine
+            traditionnelle du sud du Vietnam. C'est cette passion et ce
+            savoir-faire qu'elle partage avec vous chaque jour.
+          </p>
+          <div class="about-highlights">
+            <div class="about-highlight">
+              <div class="about-highlight-icon">🥬</div>
+              <div>
+                <h4>Produits frais</h4>
+                <p>Ingrédients sélectionnés chaque jour</p>
+              </div>
+            </div>
+            <div class="about-highlight">
+              <div class="about-highlight-icon">👩‍🍳</div>
+              <div>
+                <h4>Fait maison</h4>
+                <p>Cuisine préparée sur place</p>
+              </div>
+            </div>
+            <div class="about-highlight">
+              <div class="about-highlight-icon">🌿</div>
+              <div>
+                <h4>Options végétariennes</h4>
+                <p>Tofu et légumes dans tous les plats</p>
+              </div>
+            </div>
+            <div class="about-highlight">
+              <div class="about-highlight-icon">📦</div>
+              <div>
+                <h4>Sur place & à emporter</h4>
+                <p>Comme au restaurant, chez vous</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SPÉCIALITÉS ===== -->
+    <section id="specialties">
+      <div class="specialties-container">
+        <div class="section-header centered">
+          <div class="section-label">Nos spécialités</div>
+          <h2 class="section-title">Des plats qui font voyager</h2>
+          <p class="section-subtitle">
+            Découvrez nos incontournables, préparés avec amour et authenticité
+          </p>
+        </div>
+        <div class="specialties-grid">
+          <div class="specialty-card fade-in">
+            <div class="specialty-emoji">🍚</div>
+            <h3>Bibimbap</h3>
+            <p>
+              Le classique coréen revisité : riz, légumes croquants et votre
+              choix de protéine, servi dans un bol généreux.
+            </p>
+            <span class="specialty-price">À partir de 12,00 €</span>
+          </div>
+          <div class="specialty-card fade-in">
+            <div class="specialty-emoji">🥗</div>
+            <h3>Bo Bun</h3>
+            <p>
+              Salade de vermicelles de riz, bœuf ou poulet sauté, herbes
+              fraîches et nems croustillants. Un classique incontournable.
+            </p>
+            <span class="specialty-price">À partir de 11,90 €</span>
+          </div>
+          <div class="specialty-card fade-in">
+            <div class="specialty-emoji">🥙</div>
+            <h3>Sandwich Bánh Mì</h3>
+            <p>
+              Le célèbre sandwich vietnamien : baguette croustillante garnie de
+              viande marinée, crudités et sauce maison.
+            </p>
+            <span class="specialty-price">À partir de 6,50 €</span>
+          </div>
+          <div class="specialty-card fade-in">
+            <div class="specialty-emoji">🥟</div>
+            <h3>Raviolis Vietnamiens</h3>
+            <p>
+              Raviolis faits maison, délicatement farcis et servis avec une
+              salade fraîche. Un plaisir à chaque bouchée.
+            </p>
+            <span class="specialty-price">À partir de 2,80 €</span>
+          </div>
+          <div class="specialty-card fade-in">
+            <div class="specialty-emoji">🥢</div>
+            <h3>Poke Bowl</h3>
+            <p>
+              Salade hawaïenne : riz, légumes croquants, gingembre, betterave,
+              soja et sésame. Fraîcheur et équilibre.
+            </p>
+            <span class="specialty-price">À partir de 12,00 €</span>
+          </div>
+          <div class="specialty-card fade-in">
+            <div class="specialty-emoji">🌶️</div>
+            <h3>Bœuf Piquant</h3>
+            <p>
+              Bœuf sauté aux épices, accompagné de riz parfumé ou de nouilles.
+              Pour les amateurs de saveurs relevées.
+            </p>
+            <span class="specialty-price">12,80 €</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CARTE / MENU PDF ===== -->
+    <section id="menu">
+      <div class="menu-container">
+        <div class="section-header centered">
+          <div class="section-label">La Carte</div>
+          <h2 class="section-title">Découvrez notre menu complet</h2>
+          <p class="section-subtitle">
+            Entrées, plats, sandwichs, poke bowls, desserts et boissons — il y
+            en a pour tous les goûts.
+          </p>
+        </div>
+        <div class="menu-cta">
+          <a href="menu.pdf" target="_blank" class="btn btn-menu">
+            <svg
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+              <polyline points="10 9 9 9 8 9" />
+            </svg>
+            Consulter la carte (PDF)
+          </a>
+        </div>
+        <p class="menu-note">
+          Menu susceptible de varier selon les saisons et les arrivages.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== FORMULES ===== -->
+    <section id="formulas">
+      <div class="formulas-container">
+        <div class="section-header centered">
+          <div class="section-label">Nos Formules</div>
+          <h2 class="section-title">Des formules midi avantageuses</h2>
+          <p class="section-subtitle">
+            Composez votre repas avec nos formules du midi, du lundi au vendredi
+          </p>
+        </div>
+        <div class="formulas-grid">
+          <div class="formula-card fade-in">
+            <div class="formula-icon">🥗</div>
+            <h3>Entrée + Plat</h3>
+            <div class="formula-price">13,90 <small>€</small></div>
+            <p class="formula-desc">
+              Choisissez une entrée et un plat de la carte. +1 € avec Poke Bowl
+              saumon ou crevettes.
+            </p>
+          </div>
+          <div class="formula-card featured fade-in">
+            <div class="formula-icon">🍱</div>
+            <h3>Plat + Dessert</h3>
+            <div class="formula-price">13,90 <small>€</small></div>
+            <p class="formula-desc">
+              Un plat au choix accompagné d'un dessert maison. +1 € avec Poke
+              Bowl saumon ou crevettes.
+            </p>
+          </div>
+          <div class="formula-card fade-in">
+            <div class="formula-icon">🥪</div>
+            <h3>Sandwich + Boisson</h3>
+            <div class="formula-price">7,90 <small>€</small></div>
+            <p class="formula-desc">
+              Un sandwich bánh mì au choix + une boisson (Coca, Fanta, Oasis,
+              Eau, Ice Tea, Orangina).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AVIS ===== -->
+    <section id="reviews">
+      <div class="reviews-container">
+        <div class="section-header centered">
+          <div class="section-label">Avis clients</div>
+          <h2 class="section-title">Ce que nos clients en disent</h2>
+          <p class="section-subtitle">
+            Des retours qui nous motivent chaque jour à donner le meilleur
+          </p>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card fade-in">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              « Excellente adresse. Bo Bun savoureux, Bibimbap copieux. Des
+              goûts exquis ! Découvert par hasard, mais déjà 5 visites avec des
+              amis ! La gérante souriante est formidable. »
+            </p>
+            <div class="review-author">
+              <div class="review-avatar">C</div>
+              <div>
+                <div class="review-name">Christophe I.</div>
+                <div class="review-source">Google</div>
+              </div>
+            </div>
+          </div>
+          <div class="review-card fade-in">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              « Un grand merci pour les plats à emporter, un vrai délice ! Les
+              produits sont frais et les plats très copieux. Cela fait plus de
+              10 ans que nous commandons et nous n'avons jamais été déçus. »
+            </p>
+            <div class="review-author">
+              <div class="review-avatar">D</div>
+              <div>
+                <div class="review-name">Dominique G.</div>
+                <div class="review-source">Google</div>
+              </div>
+            </div>
+          </div>
+          <div class="review-card fade-in">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              « Très bon petit restaurant asiatique rue Albert. Les raviolis
+              vietnamiens, le Poke Bowl et le Bibimbap sont excellents. Nous y
+              retournerons ! »
+            </p>
+            <div class="review-author">
+              <div class="review-avatar">M</div>
+              <div>
+                <div class="review-name">Marie L.</div>
+                <div class="review-source">TripAdvisor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INFOS PRATIQUES ===== -->
+    <section id="info">
+      <div class="info-container">
+        <div class="section-header">
+          <div class="section-label">Infos pratiques</div>
+          <h2 class="section-title">Venez nous rendre visite</h2>
+        </div>
+        <div class="info-grid">
+          <div class="info-details">
+            <div class="info-block">
+              <h3>📍 Adresse</h3>
+              <address>
+                60 rue Albert<br />
+                75013 Paris, France
+              </address>
+              <p style="margin-top: 8px">
+                <a
+                  href="https://maps.app.goo.gl/GDFAeLZTMafCpt848"
+                  target="_blank"
+                  rel="noopener"
+                  >Voir sur Google Maps →</a
+                >
+              </p>
+            </div>
+            <div class="info-block">
+              <h3>🕐 Horaires</h3>
+              <p>
+                <strong>Lundi au Vendredi</strong><br />
+                11 h 30 – 14 h 30
+              </p>
+              <p
+                style="
+                  margin-top: 8px;
+                  font-size: 0.85rem;
+                  color: var(--text-light);
+                "
+              >
+                Fermé le samedi et le dimanche
+              </p>
+            </div>
+            <div class="info-block">
+              <h3>📞 Téléphone</h3>
+              <p><a href="tel:+33986358961">09 86 35 89 61</a></p>
+            </div>
+            <div class="info-block">
+              <h3>🚇 Accès</h3>
+              <p>
+                Métro <strong>Porte d'Ivry</strong> (ligne 7) — 3 min à pied<br />
+                Tramway <strong>T3a</strong> — arrêt Marcel Duchamp
+              </p>
+            </div>
+            <div class="info-block">
+              <h3>📱 Suivez-nous</h3>
+              <div class="info-social">
+                <a
+                  href="https://www.instagram.com/saveurs_saigon/"
+                  target="_blank"
+                  rel="noopener"
+                  class="social-link"
+                >
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                    />
+                  </svg>
+                  @saveurs_saigon
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="info-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.9!2d2.3636!3d48.8247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67200b3a0c7e9%3A0x5a8e8d8a8a8e8d8a!2s60+Rue+Albert%2C+75013+Paris!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localisation Les Saveurs de Saigon"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <div class="contact-container">
+        <div class="section-header centered">
+          <div class="section-label">Contact</div>
+          <h2 class="section-title">Envoyez-nous un message</h2>
+          <p class="section-subtitle">
+            Une question, une réservation ou un avis ? N'hésitez pas à nous
+            écrire.
+          </p>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nom *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Votre nom"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="votre@email.com"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="06 12 34 56 78"
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Objet *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Sélectionnez un objet</option>
+                <option value="reservation">Réservation</option>
+                <option value="information">Demande d'information</option>
+                <option value="traiteur">Commande traiteur</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Votre message..."
+              ></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="submitBtn">
+              Envoyer le message
+            </button>
+            <div class="form-message" id="formMessage"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h3>Les Saveurs de Saigon</h3>
+            <p>
+              Restaurant vietnamien authentique au cœur du 13e arrondissement de
+              Paris. Cuisine traditionnelle faite maison avec des produits
+              frais, depuis 2016.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#about">Notre histoire</a></li>
+              <li><a href="#specialties">Spécialités</a></li>
+              <li><a href="#menu">La Carte</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="tel:+33986358961">09 86 35 89 61</a></li>
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/GDFAeLZTMafCpt848"
+                  target="_blank"
+                  >60 rue Albert, 75013 Paris</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/saveurs_saigon/"
+                  target="_blank"
+                  >@saveurs_saigon</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Les Saveurs de Saigon. Tous droits réservés.</span>
+          <span>Fait avec 🍜 à Paris</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== EmailJS SDK ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+      // ============ EMAILJS CONFIG ============
+      // IMPORTANT: Remplacez ces valeurs par vos identifiants EmailJS
+      // Créez un compte gratuit sur https://www.emailjs.com
+      const EMAILJS_PUBLIC_KEY = "DEGwXf8DIMEGtEqGu"; // Clé publique EmailJS
+      const EMAILJS_SERVICE_ID = "service_0n7sqqy"; // ID du service email
+      const EMAILJS_TEMPLATE_ID = "template_xeffg1d"; // ID du template
+
+      // Initialiser EmailJS
+      (function () {
+        if (typeof emailjs !== "undefined") {
+          emailjs.init(EMAILJS_PUBLIC_KEY);
+        }
+      })();
+
+      // ============ NAVBAR SCROLL ============
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        navbar.classList.toggle("scrolled", window.scrollY > 20);
+      });
+
+      // ============ MOBILE NAV ============
+      const burger = document.getElementById("burger");
+      const mobileNav = document.getElementById("mobileNav");
+
+      burger.addEventListener("click", () => {
+        burger.classList.toggle("active");
+        mobileNav.classList.toggle("active");
+        document.body.style.overflow = mobileNav.classList.contains("active")
+          ? "hidden"
+          : "";
+      });
+
+      function closeMobile() {
+        burger.classList.remove("active");
+        mobileNav.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      // ============ FADE IN ON SCROLL ============
+      const fadeEls = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => entry.target.classList.add("visible"), i * 80);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 },
+      );
+      fadeEls.forEach((el) => observer.observe(el));
+
+      // ============ CONTACT FORM ============
+      const form = document.getElementById("contactForm");
+      const submitBtn = document.getElementById("submitBtn");
+      const formMessage = document.getElementById("formMessage");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Vérification que EmailJS est configuré
+        if (EMAILJS_PUBLIC_KEY === "YOUR_PUBLIC_KEY") {
+          formMessage.className = "form-message error";
+          formMessage.textContent =
+            "Le formulaire de contact n'est pas encore configuré. Veuillez nous appeler au 09 86 35 89 61.";
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Envoi en cours...";
+
+        const templateParams = {
+          from_name: document.getElementById("name").value,
+          from_email: document.getElementById("email").value,
+          phone: document.getElementById("phone").value,
+          subject: document.getElementById("subject").value,
+          message: document.getElementById("message").value,
+        };
+
+        emailjs
+          .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+          .then(function () {
+            formMessage.className = "form-message success";
+            formMessage.textContent =
+              "Merci ! Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.";
+            form.reset();
+          })
+          .catch(function (error) {
+            formMessage.className = "form-message error";
+            formMessage.textContent =
+              "Une erreur est survenue. Veuillez réessayer ou nous appeler directement.";
+            console.error("EmailJS error:", error);
+          })
+          .finally(function () {
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Envoyer le message";
+          });
+      });
+    </script>
+  </body>
+</html>
